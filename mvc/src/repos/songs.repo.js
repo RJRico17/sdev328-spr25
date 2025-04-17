@@ -8,10 +8,13 @@ export const getAllSongs = () => {
 }
 
 export const getSongById = (id) => {
-
+    const found = songs.find(el=>el.id===Number(id))
+    return found;
 }
 
 export const addSong = (song) => {
+    song.id = songs.length + 1;
+    songs.push(song);
 
 }
 
