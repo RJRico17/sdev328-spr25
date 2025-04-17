@@ -1,17 +1,52 @@
+//- html(lang="en")
+//-     html
+//-         meta(charset="UTF-8")
+//-         body
+//-             header
+//-                 h1 Hello World 
+//-                 p Welcome 
+//-             main
+//-                 div
+//-                     h2 Here are some features 
+//-                     ul
+//-                         li 
+//-                             a(href="https://www.google.com") Pug uses idents 
+//-                         li Pug includes partial templates 
+//-                         li Pug beautifys code
+//-                 div
+
 html(lang="en")
-    html
-        meta(charset="UTF-8")
-        body
-            header
-                h1 Hello World 
-                p Welcome 
-            main
-                div
-                    h2 Here are some features 
-                    ul
-                        li 
-                            a(href="https://www.google.com") Pug uses idents 
-                        li Pug includes partial templates 
-                        li Pug beautifys code
-                div
-                
+head
+    meta(charset="UTF-8")
+    title Sample Page
+body
+    header
+        h1 Welcome
+        ul
+            li
+                a(href="/") Home
+            li
+                a(href="/about") About
+            li
+                a(href="/contact") Contact
+    section
+        h2 Profile
+        p This section contains personal profile information.
+
+        table
+            thead
+                tr
+                    th Name
+                    th Age
+                    th Occupation
+            tbody
+                tr
+                    td Jane Doe
+                    td 30
+                    td Software Engineer
+                tr
+                    td John Smith
+                    td 27
+                    td Graphic Designer
+    footer
+        p © 2024 Sample Website
